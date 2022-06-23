@@ -1,13 +1,13 @@
 import javax.swing.*;
-        import java.awt.event.ActionEvent;
-        import java.awt.event.ActionListener;
-        import java.awt.*;
-        import java.io.*;
-        import java.nio.file.Files;
-        import java.nio.file.Paths;
-        import java.util.*;
-        import javax.swing.table.DefaultTableModel;
-        import java.util.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.*;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.*;
+import javax.swing.table.DefaultTableModel;
+import java.util.List;
 
 public class BackendAndUI extends JFrame {
 
@@ -546,7 +546,7 @@ public class BackendAndUI extends JFrame {
             output.write("doNothing().when("+objName+")."+objFuncName.substring(objFuncName.indexOf(".")+1,objFuncName.indexOf(")"))+t3+");\n");
         }
         else{
-            output.write("when("+objFuncName+"("+t3+").thenReturn("+t4+");\n");
+            output.write("when("+objFuncName.substring(0,objFuncName.indexOf("("))+"("+t3+").thenReturn("+t4+");\n");
         }
 
     }

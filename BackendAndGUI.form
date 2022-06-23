@@ -86,7 +86,7 @@
           </grid>
         </constraints>
         <properties>
-          <background color="-14468031"/>
+          <background color="-12170932"/>
           <font name="Courier" size="14" style="0"/>
           <foreground color="-12170932"/>
           <icon value="icons/done.png"/>
@@ -108,7 +108,7 @@
           <horizontalAlignment value="2"/>
           <horizontalTextPosition value="11"/>
           <iconTextGap value="15"/>
-          <text value="Information about the code"/>
+          <text value="Code Preview"/>
         </properties>
       </component>
       <vspacer id="35243">
@@ -289,6 +289,7 @@
         </constraints>
         <properties>
           <background color="-12170932"/>
+          <toolTipText value="Parameters"/>
         </properties>
       </component>
       <component id="dd572" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
@@ -301,6 +302,7 @@
         </constraints>
         <properties>
           <background color="-12170932"/>
+          <toolTipText value="Return Value"/>
         </properties>
       </component>
       <component id="15203" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
@@ -311,7 +313,10 @@
             <maximum-size width="315" height="45"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="Courier" size="14" style="0"/>
+          <toolTipText value="Public Function Name"/>
+        </properties>
       </component>
       <component id="34313" class="javax.swing.JComboBox" binding="comboBox5" default-binding="true">
         <constraints>
@@ -321,7 +326,10 @@
             <maximum-size width="315" height="45"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <font name="Courier" size="14" style="0"/>
+          <toolTipText value="External Function Name"/>
+        </properties>
       </component>
       <component id="64a40" class="javax.swing.JTextArea" binding="textArea3" default-binding="true">
         <constraints>
@@ -333,6 +341,7 @@
         </constraints>
         <properties>
           <background color="-12170932"/>
+          <toolTipText value="Parameters"/>
         </properties>
       </component>
       <component id="db0e5" class="javax.swing.JTextArea" binding="textArea4" default-binding="true">
@@ -345,17 +354,8 @@
         </constraints>
         <properties>
           <background color="-12170932"/>
+          <toolTipText value="Return Value"/>
         </properties>
-      </component>
-      <component id="f41ef" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
-        <constraints>
-          <grid row="11" column="16" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="315" height="45"/>
-            <preferred-size width="315" height="45"/>
-            <maximum-size width="315" height="45"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
       <component id="27a9c" class="javax.swing.JLabel">
         <constraints>
@@ -376,6 +376,7 @@
           </grid>
         </constraints>
         <properties>
+          <font name="Courier" size="14" style="0"/>
           <model>
             <item value="assertEquals(double expected, double actual)"/>
             <item value="assertEquals(double expected, double actual, double delta)"/>
@@ -395,6 +396,7 @@
             <item value="assertTrue(boolean condition)"/>
             <item value="assertTrue(String message, boolean condition)"/>
           </model>
+          <toolTipText value="Asserts"/>
         </properties>
       </component>
       <vspacer id="2432f">
@@ -412,6 +414,7 @@
         </constraints>
         <properties>
           <background color="-12170932"/>
+          <font name="Courier" size="14" style="0"/>
         </properties>
       </component>
       <component id="c6588" class="javax.swing.JButton" binding="createUnitTestButton" default-binding="true">
@@ -454,6 +457,19 @@
           <font name="Courier" size="14" style="0"/>
           <icon value="icons/done.png"/>
           <text value="Test Complete   "/>
+        </properties>
+      </component>
+      <component id="f41ef" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+        <constraints>
+          <grid row="11" column="16" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="315" height="45"/>
+            <preferred-size width="315" height="45"/>
+            <maximum-size width="315" height="45"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Courier" size="14" style="0"/>
+          <toolTipText value="Object Name"/>
         </properties>
       </component>
     </children>
